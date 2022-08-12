@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(45deg, #3E3B58, #6085E2);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #E2E2E2;
+}
+
+#external-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 50%;
+  height: 100vh;
+  padding: 0 0.5rem;
+
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#l-box {
+  width: 50%;
+}
+
+#r-box {
+  width: 50%;
+  flex-direction: column;
+}
+
+#text-container {
+  width: 60%;
+}
+
+#text-container p {
+  font-size: 1.2rem;
+}
+
+#title {
+  font-weight: 900;
+  font-size: 4rem
+}
+
+#input {
+  width: 60%;
+  height: 50%;
+
+  outline: none;
+  resize: none;
+  padding: 1.2rem;
+
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(17px);
+  border: 0px;
+
+  color: #E2E2E2;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+#input::placeholder {
+  color: #E2E2E2;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+#buttons-scaffold {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttons-scaffold button {
+  margin: 2rem 2.5rem 0 2.5rem;
+  padding: 0.8rem 1.5rem;
+  border: 0px;
+  border-radius: 20px;
+
+  color: #E2E2E2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+#create {
+  background-color: #5027e6;
+}
+
+#clear {
+  background-color: transparent;
+}

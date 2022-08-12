@@ -1,0 +1,23 @@
+{
+  "name": "quotesss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulo-arthur/Quotesss.git"
+  },
+  "author": "Paulo Arthur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulo-arthur/Quotesss/issues"
+  },
+  "homepage": "https://github.com/paulo-arthur/Quotesss#readme",
+  "dependencies": {
+    "electron": "^20.0.2",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
