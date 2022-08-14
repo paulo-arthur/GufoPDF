@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #141414;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+#card {
+  width: 40vw;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(17px);
+
+  padding: 5rem 6rem;
+  margin: 0;
+}
+
+#card h1{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400
+}
+
+.bubble {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 100%;
+
+}

@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="../styles/menu.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <title>Quotess</title>
   </head>
   <body>
@@ -26,10 +25,21 @@
       <div id = "r-box" class = "box">
         <textarea id = "input" placeholder="Type the quote here ..."></textarea>
         <div id = "buttons-scaffold">
-           <button type="button" id = "create">Create</button>
-           <button type="button" id = "clear">Clear</button>
+           <input type="button" value ='Create' onclick="changeWindow()" id="create" />
+           <input type="button" value='Clear' id="clear" />
         </div>
       </div>
     </main>
   </body>
+  <script>
+    function changeWindow() {
+      const { ipcRenderer } = require('electron');
+
+      var quote = document.getElementById('input').value;
+
+      if (quote.length != 0) {
+        ipcRenderer.send('changeWindow', quote);
+      }
+    }
+  </script>
 </html>

@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   background-image: linear-gradient(45deg, #3E3B58, #6085E2);
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #E2E2E2;
 }
@@ -28,12 +28,13 @@ html, body {
 }
 
 #l-box {
-  width: 50%;
+  width: 60%;
 }
 
 #r-box {
   width: 50%;
   flex-direction: column;
+  gap: 50px;
 }
 
 #text-container {
@@ -67,7 +68,7 @@ html, body {
   color: #E2E2E2;
   font-size: 1.2rem;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #input::placeholder {
@@ -84,8 +85,9 @@ html, body {
   justify-content: center;
 }
 
-#buttons-scaffold button {
-  margin: 2rem 2.5rem 0 2.5rem;
+#buttons-scaffold input {
+  width: 10vw;
+  margin: 0rem 2.5rem 0 2.5rem;
   padding: 0.8rem 1.5rem;
   border: 0px;
   border-radius: 20px;
